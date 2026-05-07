@@ -1,0 +1,104 @@
+Aqui está a **documentação do código fonte** que desenvolvemos até agora, com a data e hora atuais:
+
+---
+
+# 📑 Documentação do Projeto — Site da Christiane Cabral  
+**Data:** 06/05/2026  
+**Hora:** 22:43 (Horário de Brasília)
+
+---
+
+## 🎯 Objetivo
+Criar um site acessível para **Christiane Cabral**, com navegação intuitiva, formulário de contato funcional e feedback sonoro e textual para usuários de leitores de tela.
+
+---
+
+## 📂 Estrutura de Pastas
+```
+/projeto
+  ├── index.html
+  ├── css/
+  │     └── style.css
+  ├── js/
+  │     ├── app.js
+  │     ├── mensagens.js
+  │     └── formularios.js
+  └── audio/
+        ├── som-formulario.mp3
+        └── telaInicial.wav
+```
+
+---
+
+## 📄 index.html
+- Estrutura principal do site.  
+- Navegação com links intuitivos:  
+  - **Quem é Christiane**  
+  - **Consultorias e palestras**  
+  - **Materiais e livros**  
+  - **Fale comigo**  
+- Formulário de contato com campos obrigatórios (`nome`, `email`, `mensagem`).  
+- Área de mensagens acessível com `role="alert"` e `aria-live="assertive"`.  
+- O título principal (`<h1 id="titulo" tabindex="-1">`) permite receber foco programaticamente.
+
+---
+
+## 🎨 css/style.css
+- Layout simples e responsivo.  
+- Estilos para cabeçalho, rodapé e conteúdo.  
+- Classes `.mensagem`, `.sucesso`, `.erro` para feedback visual.  
+- Mensagens aparecem com transição suave e desaparecem após 5 segundos.
+
+---
+
+## ⚙️ js/app.js
+- Inicialização básica do site.  
+- Log no console confirmando carregamento:  
+  ```js
+  console.log("✅ app.js carregado - Site inicializado.");
+  ```
+
+---
+
+## 📩 js/formularios.js
+- Captura o envio do formulário (`submit`).  
+- Valida se todos os campos estão preenchidos.  
+- Exibe mensagens de erro ou sucesso personalizadas.  
+- Após sucesso:
+  - Mostra mensagem: **“Obrigado pelo seu contato [nome]. Em breve retornaremos.”**  
+  - Limpa o formulário.  
+  - Aguarda 5 segundos → toca `telaInicial.wav` e retorna o foco para o título principal.  
+- Feedback sonoro:
+  - `som-formulario.mp3` toca sempre que um campo recebe foco.  
+  - `telaInicial.wav` toca após a mensagem de sucesso desaparecer.
+
+---
+
+## 🔊 js/mensagens.js
+- Função `mostrarMensagem(tipo, texto)`:
+  - Atualiza o conteúdo da área de mensagens.  
+  - Garante que leitores de tela anunciem o texto.  
+  - Aplica animação visual (`.show`).  
+  - Remove a mensagem após 5 segundos.  
+  - Dá foco automático na mensagem para acessibilidade.
+
+---
+
+## ✅ Funcionalidades Implementadas
+- Navegação intuitiva com nomes claros.  
+- Formulário acessível com validação.  
+- Mensagens de feedback visuais e sonoras.  
+- Áudio de formulário ao focar em campos.  
+- Áudio de tela inicial após mensagem de sucesso desaparecer.  
+- Foco retorna ao início do site para melhor navegação.  
+
+---
+
+📌 **Próximos passos sugeridos:**  
+- Adicionar som específico para erros (`erro.wav`).  
+- Implementar envio real do formulário para backend (PHP, Node.js ou outro).  
+- Melhorar responsividade para dispositivos móveis.
+
+---
+
+Quer que eu prepare essa documentação também em **formato Markdown técnico** (README.md), para você colocar direto no repositório do projeto?
