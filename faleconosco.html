@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco - Christiane Cabral</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo" tabindex="-1">Fale Conosco</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Tela Inicial</a></li>
+        <li><a href="quem.html">Quem é Christiane</a></li>
+        <li><a href="consultorias.html">Solicitar Consultoria</a></li>
+        <li><a href="palestras.html">Agendar Palestra</a></li>
+        <li><a href="materiais.html">Materiais e livros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="form-contato">
+      <label for="nome">Seu nome:</label><br>
+      <input type="text" id="nome" required><br><br>
+
+      <label for="email">Seu e-mail:</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="assunto">Como posso ajudar você?</label><br>
+      <input type="text" id="assunto" required><br><br>
+
+      <label for="telefone">Telefone/WhatsApp (opcional):</label><br>
+      <input type="tel" id="telefone"><br><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" required></textarea><br><br>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <!-- 🔊 Área de mensagens acessível -->
+    <div id="mensagem-resultado" class="mensagem" role="alert" aria-live="assertive"></div>
+
+    <!-- Redes sociais (comentadas até receber links oficiais) -->
+    <!-- <ul>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Lattes</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">ORCID</a></li>
+      <li><a href="#">ResearchGate</a></li>
+    </ul> -->
+
+    <!-- Contato direto por WhatsApp -->
+    <p>
+      📱 <a href="https://wa.me/5521971283833">Falar pelo WhatsApp</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Christiane Cabral</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/mensagens.js"></script>
+  <script src="js/formularios.js"></script>
+</body>
+</html>

@@ -26,4 +26,3 @@ function mostrarMensagem(tipo, texto) {
     }, 5000);
   }, 100);
 }
-

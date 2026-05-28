@@ -24,16 +24,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
+    const assunto = document.getElementById("assunto").value.trim();
     const mensagem = document.getElementById("mensagem").value.trim();
 
-    if (!nome || !email || !mensagem) {
+    if (!nome || !email || !assunto || !mensagem) {
       console.log("❌ Campos faltando");
-      mostrarMensagem("erro", "Por favor, preencha todos os campos.");
+      mostrarMensagem("erro", "Por favor, preencha todos os campos obrigatórios.");
+      tocarAudio("audio/erro.wav");
       return;
     }
 
     console.log("✅ Sucesso");
-    // Mensagem personalizada com o nome do usuário
     mostrarMensagem("sucesso", `Obrigado pelo seu contato ${nome}. Em breve retornaremos.`);
 
     form.reset();
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
       tocarAudio("audio/telaInicial.wav");
       document.getElementById("titulo").focus();
-    }, 5100); // um pouco mais que o tempo da mensagem (5s)
+    }, 5100);
   });
 });
-

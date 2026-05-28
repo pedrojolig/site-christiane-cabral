@@ -1,0 +1,60 @@
+Aqui está a **documentação completa** de tudo o que fizemos hoje, com a data de hoje: **27/05/2026**.
+
+---
+
+# 📑 Documentação das alterações realizadas no site da Christiane Cabral  
+**Data:** 27/05/2026  
+
+## ✅ Ajustes feitos
+
+### 1. Foto e descrição acessível
+- Inserida foto da Christiane Cabral na **home (index.html)** e em **quem.html**.  
+- Adicionado atributo `alt` detalhado com descrição completa para acessibilidade.
+
+### 2. Página “Quem é Christiane”
+- Conteúdo expandido com currículo completo: trajetória acadêmica, áreas de atuação, palestras, livros, experiência nacional e internacional, instituições parceiras, missão e frase final.  
+- Menu atualizado para usar **Tela Inicial**, **Solicitar Consultoria** e **Agendar Palestra**.
+
+### 3. Menus de navegação
+- Substituído o rótulo **Início → Tela Inicial** em todas as páginas (exceto na própria home, onde o link foi removido).  
+- Substituído **Consultorias → Solicitar Consultoria**.  
+- Substituído **Palestras → Agendar Palestra**.  
+- Corrigido também em **materiais.html**.
+
+### 4. Página inicial (index.html)
+- Removidos os botões redundantes “Solicitar Consultoria” e “Agendar Palestra”.  
+- Menu simplificado, sem link para “Tela Inicial” dentro da própria home.
+
+### 5. Página Fale Conosco
+- Formulário de contato revisado e acessível.  
+- Área de mensagens com `aria-live` para leitores de tela.  
+- Links de redes sociais mantidos comentados até receber URLs oficiais.  
+- Corrigido o link do WhatsApp: agora aparece como link simples dentro da seção de contato, sem `target="_blank"`.
+
+### 6. Página Materiais e Livros
+- Menu atualizado para refletir os novos rótulos:  
+  - **Consultorias → Solicitar Consultoria**  
+  - **Palestras → Agendar Palestra**
+
+---
+
+## 📂 Arquivos modificados
+- **index.html** → ajustes no menu e remoção de botões redundantes.  
+- **quem.html** → currículo completo e correção dos rótulos no menu.  
+- **consultorias.html** → título e menu atualizados.  
+- **palestras.html** → título e menu atualizados.  
+- **materiais.html** → menu atualizado.  
+- **faleconosco.html** → formulário revisado, WhatsApp corrigido, menu atualizado.  
+
+---
+
+## 📌 Próximos passos sugeridos
+- Inserir os links oficiais das redes sociais da Christiane.  
+- Criar a página **projetos.html** para listar trabalhos e pesquisas.  
+- Estilizar o link do WhatsApp no CSS para parecer um botão verde arredondado.  
+
+---
+
+✨ Com isso, o site está consistente, acessível e pronto para receber os últimos detalhes de conteúdo e estilo.  
+
+👉 Quer que eu já traga a **estrutura inicial de projetos.html** para deixar tudo preparado?
