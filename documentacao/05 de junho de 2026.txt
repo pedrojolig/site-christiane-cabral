@@ -1,0 +1,53 @@
+Aqui está a documentação atualizada de tudo o que fizemos hoje, com a data de hoje: **05/06/2026**.  
+
+---
+
+# 📑 Documentação das alterações realizadas no site da Christiane Cabral  
+**Data:** 05/06/2026  
+
+## ✅ Ajustes feitos
+
+### 1. Formulário de contato (faleconosco.html + JS)
+- Mensagens de **sucesso** ou **erro** agora permanecem visíveis por alguns segundos antes de desaparecer.  
+- Após esse tempo, o áudio de tela inicial é reproduzido e o usuário é **redirecionado automaticamente para a home (index.html)**.  
+- Isso garante feedback claro e acessível antes da navegação.
+
+### 2. Links de redes sociais
+- Transformados em **botões acessíveis**:  
+  - Visualmente estilizados como botões (`.btn-link` no CSS).  
+  - Recebem o atributo `role="button"`, permitindo que leitores de tela os reconheçam como botões.  
+  - Usuário pode navegar com a tecla **B** e ativar tanto com **Enter** quanto com **Espaço**.  
+- Implementado JavaScript para que a tecla **Espaço** dispare o clique, garantindo consistência de comportamento.
+
+### 3. CSS atualizado
+- Criada a classe `.btn-link` para estilizar os links como botões:  
+  - Fundo azul acessível, texto branco, bordas arredondadas, padding e efeito de hover/focus.  
+  - Cursor tipo botão (`pointer`).  
+- Mantida a classe `.whatsapp-btn` para o botão flutuante do WhatsApp.
+
+### 4. HTMLs revisados
+- **faleconosco.html**:  
+  - Links de redes sociais atualizados com `class="btn-link"` e `role="button"`.  
+  - Script incluído para suporte à tecla **Espaço**.  
+- **quem.html** e demais páginas: ajustes previstos para aplicar a mesma lógica de botões acessíveis nas redes sociais (consistência).
+
+---
+
+## 📂 Arquivos modificados
+- **faleconosco.html** → redes sociais com `role="button"`, script para tecla Espaço.  
+- **formularios.js** → mensagens de sucesso/erro com tempo de exibição e redirecionamento para home.  
+- **mensagens.js** → mantém lógica de mensagens acessíveis com foco automático.  
+- **style.css** → nova classe `.btn-link` para links como botões.  
+
+---
+
+## 📌 Próximos passos sugeridos
+- Replicar a lógica de botões acessíveis (`role="button"`, `.btn-link`) em **quem.html** e outras páginas que tenham redes sociais.  
+- Revisar consistência visual entre botões de ação (CTA), redes sociais e WhatsApp.  
+- Criar a página **projetos.html** para listar trabalhos e pesquisas, mantendo o mesmo padrão de acessibilidade.  
+
+---
+
+✨ Com isso, o site agora oferece uma experiência mais acessível e inclusiva: feedback sonoro e visual claro, navegação consistente para leitores de tela e links de redes sociais que se comportam como botões.  
+
+👉 Quer que eu já prepare a versão completa de **quem.html** com os botões acessíveis nas redes sociais, para manter tudo uniforme?

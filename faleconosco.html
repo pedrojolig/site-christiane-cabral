@@ -41,19 +41,19 @@
     </form>
 
     <!-- 🔊 Área de mensagens acessível -->
-    <div id="mensagem-resultado" class="mensagem" role="alert" aria-live="assertive"></div>
+    <div id="mensagem-resultado" class="mensagem" role="alert" aria-live="assertive" tabindex="-1"></div>
 
-    <!-- Redes sociais (comentadas até receber links oficiais) -->
-    <ul>
-      <li><a href="https://www.linkedin.com/company/ppgi-ufal/posts/?feedView=all">LinkedIn Christiane Cabral</a></li>
-      <li><a href="http://lattes.cnpq.br/9204584364501313">Lattes Christiane Cabral</a></li>
-      <li><a href="https://www.instagram.com/christianecabral27/">Instagram Christiane Cabral</a></li>
-      <li><a href="https://orcid.org/my-orcid?orcid=0000-0001-7579-8107">ORCID Christiane Cabral</a></li>
+    <!-- Redes sociais como botões -->
+    <ul class="redes-sociais">
+      <li><a href="https://www.linkedin.com/company/ppgi-ufal/posts/?feedView=all" class="btn-link" role="button">LinkedIn Christiane Cabral</a></li>
+      <li><a href="http://lattes.cnpq.br/9204584364501313" class="btn-link" role="button">Lattes Christiane Cabral</a></li>
+      <li><a href="https://www.instagram.com/christianecabral27/" class="btn-link" role="button">Instagram Christiane Cabral</a></li>
+      <li><a href="https://orcid.org/my-orcid?orcid=0000-0001-7579-8107" class="btn-link" role="button">ORCID Christiane Cabral</a></li>
     </ul>
 
     <!-- Contato direto por WhatsApp -->
     <p>
-      📱 <a href="https://wa.me/5521971283833">Falar pelo WhatsApp</a>
+      📱 <a href="https://wa.me/5521971283833" class="whatsapp-btn" role="button">Falar pelo WhatsApp</a>
     </p>
   </main>
 
@@ -64,5 +64,20 @@
   <script src="js/app.js"></script>
   <script src="js/mensagens.js"></script>
   <script src="js/formularios.js"></script>
+
+  <!-- Script para ativar links com barra de espaço -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const botaoLinks = document.querySelectorAll('[role="button"]');
+      botaoLinks.forEach(link => {
+        link.addEventListener("keydown", function(event) {
+          if (event.code === "Space") {
+            event.preventDefault();
+            link.click(); // dispara o clique como se fosse Enter
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

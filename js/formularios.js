@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     form.reset();
 
-    // 🔊 Som e foco só depois que a mensagem desaparecer
+    // 🔊 Som e redirecionamento só depois que a mensagem desaparecer
     setTimeout(() => {
       tocarAudio("audio/telaInicial.wav");
-      document.getElementById("titulo").focus();
+      window.location.href = "index.html"; // redireciona para a home
     }, 5100);
   });
 });

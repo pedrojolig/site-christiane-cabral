@@ -36,15 +36,20 @@
   font-weight: bold;
 }
 
-/* Redes sociais */
-.redes-sociais ul {
-  list-style: none;
-  padding: 0;
-}
-.redes-sociais li {
-  margin: 5px 0;
-}
-.redes-sociais a {
-  color: #4a90e2;
+/* Redes sociais como botões */
+.btn-link {
+  display: inline-block;
+  background-color: #4a90e2; /* azul acessível */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #357ABD; /* azul mais escuro no hover/focus */
+  outline: none;
 }
